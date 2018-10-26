@@ -1,0 +1,301 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .circle {
+        border-radius: 100%;
+        background-color: rgb(221, 13, 13);
+        z-index: -9999;
+    }
+
+    #c1{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 500px;
+        left: 270px;
+    }
+
+    #c2{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 500px;
+        left: 130px;
+    }
+
+    #c3{
+        width: 65px;
+        height: 65px;
+        position: absolute;
+        top: 500px;
+        left: 30px;
+    }
+
+    #c4{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 190px;
+        left: -70px;
+    }
+
+    #c5{
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        top: 100px;
+        left: -70px;
+    }
+
+    #c6{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -200px;
+        left: 70px;
+    }
+
+    #c7{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: -100px;
+        left: 200px;
+    }
+
+    #area {
+        background-color: transparent;
+        width: 854px;
+        height: 480px;
+        border-right: 9999px solid #fff;
+        border-bottom: 9999px solid #fff;
+    }
+
+    #jboss{
+        position: absolute;
+        top: -20px;
+        font-size: 100px;
+        color: #898989;
+        left: 950px;
+        z-index: -99999;
+    }
+
+    h1{
+        display: inline-block;
+    }
+
+    #j{
+        letter-spacing: -65px;
+    }
+
+    #b {
+        letter-spacing: -50px;
+    }
+
+    #oss {
+        letter-spacing: -20px;
+    }
+
+    #r {
+        position: absolute;
+        left: 1000px;
+        top: 90px;
+        color: #9c9c9c;
+        z-index: -9999;
+        font-size: 25px;
+    }
+
+    #brh {
+        position: absolute;
+        top: 317px;
+        font-size: 30px;
+        color: #898989;
+        left: 900px;
+        z-index: -999;
+    }
+
+    #rh {
+        word-spacing: -5px;
+        color: rgb(219, 18, 18);
+    }
+
+</style>
+
+<div id="area"></div>
+
+<div class='circle' id="c1"></div>
+<div class='circle' id="c2"></div>
+<div class='circle' id="c3"></div>
+<div class='circle' id="c4"></div>
+<div class='circle' id="c5"></div>
+<div class='circle' id="c6"></div>
+<div class='circle' id="c7"></div>
+
+<div id="jboss">
+    <h1 id="j">J</h1>
+    <h1 id="b">B</h1>
+    <h1 id="oss">oss</h1>
+</div>
+<h6 id="r">®</h6>
+
+<div id="brh">
+    <h1 id="by">by</h1>
+    <h1 id="rh">Red Hat</h1>
+</div>
+
+<script type="text/javascript" src="anime.js"></script>
+<script>
+    const timeline = anime.timeline();
+    timeline
+        .add({
+            targets: '#c1',
+            translateY: [
+                { value: -150, duration: 1000, elasticity: 0 }
+            ],
+            scaleY: [
+                { value: [1, 1.75], duration: 100, easing: 'easeOutExpo' },
+                { value: 1 },
+            ],
+            offset: 500
+        })
+        .add({
+            targets: '#c2',
+            translateY: [
+                { value: -160, duration: 1000, elasticity: 0 }
+            ],
+            translateX: [
+                { value: 50, duration: 1000, elasticity: 0 }
+            ],
+            scaleY: [
+                { value: [1, 1.75], duration: 100, easing: 'easeOutExpo' },
+                { value: 1 },
+            ],
+            scaleX: [
+                { value: [1, 1.75], duration: 100, easing: 'easeOutExpo' },
+                { value: 1 },
+            ],
+            offset: 600
+        })
+        .add({
+            targets: '#c3',
+            translateY: [
+                { value: -225, duration: 1000, elasticity: 0 }
+            ],
+            translateX: [
+                { value: 85, duration: 1000, elasticity: 0 }
+            ],
+            scaleY: [
+                { value: [1, 1.75], duration: 100, easing: 'easeOutExpo' },
+                { value: 1 },
+            ],
+            offset: 700
+        })
+        .add({
+            targets: '#c4',
+            translateX: [
+                { value: 165, duration: 1000, elasticity: 0 }
+            ],
+            scaleX: [
+                { value: [1, 1.75], duration: 100, easing: 'easeOutExpo' },
+                { value: 1 },
+            ],
+            offset: 800
+        })
+        .add({
+            targets: '#c5',
+            translateX: [
+                { value: 215, duration: 1000, elasticity: 100 }
+            ],
+            translateY: [
+                { value: 10, duration: 1000, elasticity: 0 }
+            ],
+            scaleX: [
+                { value: [1, 1.75], duration: 100, easing: 'easeOutExpo' },
+                { value: 1 },
+            ],
+            scaleY: [
+                { value: [1, 1.75], duration: 100, easing: 'easeOutExpo' },
+                { value: 1 },
+            ],
+            offset: 900
+        })
+        .add({
+            targets: '#c6',
+            translateX: [
+                { value: 155, duration: 1000, elasticity: 100 }
+            ],
+            translateY: [
+                { value: 265, duration: 1000, elasticity: 0 }
+            ],
+            scaleX: [
+                { value: [1, 1.75], duration: 100, easing: 'easeOutExpo' },
+                { value: 1 },
+            ],
+            scaleY: [
+                { value: [1, 1.75], duration: 100, easing: 'easeOutExpo' },
+                { value: 1 },
+            ],
+            offset: 1000
+        })
+        .add({
+            targets: '#c7',
+            translateX: [
+                { value: 105, duration: 1000, elasticity: 100 }
+            ],
+            translateY: [
+                { value: 170, duration: 1000, elasticity: 100 }
+            ],
+            scaleX: [
+                { value: [1, 1.75], duration: 100, easing: 'easeOutExpo' },
+                { value: 1 },
+            ],
+            scaleY: [
+                { value: [1, 1.75], duration: 100, easing: 'easeOutExpo' },
+                { value: 1 },
+            ],
+            offset: 1100
+        })
+        .add({
+            targets: '#jboss',
+            translateX: [
+                { value: -700, duration: 1000, elasticity: 100 }
+            ],
+            color: [
+                { value: '#a7a7a7' },
+            ],
+            offset: 1200
+        })
+        .add({
+            targets: '#r',
+            scale: 2,
+            translateX: -125,
+            rotate: '1080deg',
+            elasticity: 0,
+            offset: 2100
+        })
+        .add({
+            targets: ['#j', '#b'],
+            color: [
+                { value: 'rgb(221, 13, 13)' },
+            ],
+            offset: 2000
+        })
+        .add({
+            targets: '#oss',
+            color: [
+                { value: '#515151' },
+            ],
+            offset: 2000
+        })
+        .add({
+            targets: '#brh',
+            translateX: -500,
+            elasticity: 20,
+            offset: 2000
+        })
+</script>
